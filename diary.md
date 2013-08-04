@@ -73,3 +73,18 @@ I gave it an MIT License, which I found some more resources for at the
 
 I also found this Stack Overflow answer about
 [using anchors with Markdown](http://stackoverflow.com/questions/6695439/how-do-you-create-link-to-a-named-anchor-in-multimarkdown/7015050#7015050).
+
+3:05
+----
+
+I was looking through some of the most recent Git questions on Stack
+Overflow, and I [knittl's answer](http://stackoverflow.com/questions/18044819/how-to-remove-commits-from-rebased-branch-and-rebase-again/18044973#18044973)
+mentioned "patch queuing systems" for Git, which sounded to me a lot
+like [Mercurial's MQ extension](http://mercurial.selenic.com/wiki/MqExtension).
+
+I looked up the mentioned Git patch queuing systems, and these are
+what I found:
+
+* [What's the Git approach to publish a patch queue?](http://stackoverflow.com/questions/5016862/whats-the-git-approach-to-publish-a-patch-queue).
+* [git guilt](http://repo.or.cz/w/guilt.git).
+* [TopGit](https://github.com/greenrd/topgit).
