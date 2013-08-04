@@ -60,3 +60,16 @@ like rebases.
 --------
 
 [MarkdownPad](http://markdownpad.com/) is a pretty cool product.
+
+2013-08-04, Sunday
+==================
+
+12:46 pm
+--------
+
+Dear diary, today I just released my [Git Ninja Toolkit (GNT)](https://github.com/coldhawaiian/git-ninja-toolkit).
+I gave it an MIT License, which I found some more resources for at the
+[Open Source Initiative](http://opensource.org/licenses/MIT).
+
+I also found this Stack Overflow answer about
+[using anchors with Markdown](http://stackoverflow.com/questions/6695439/how-do-you-create-link-to-a-named-anchor-in-multimarkdown/7015050#7015050).
