@@ -41,21 +41,46 @@ According to [Pro Git](http://git-scm.com/book/en/Git-Internals-Git-References):
 Vim
 ===
 
-You can move the cursor forward rapidly by using `w`, and to go
-backwards rapidly, you use `b`. Both take you to the beginning of a
-word boundary.
+[Moving Around](http://vim.wikia.com/wiki/Moving_around)
+--------------------------------------------------------
 
-Typing `e` will also moves the cursor forward, like `w`. However,
-unlike `w`, `e` will move the cursor to the ***ends of word
-boundaries***, not the beginning of them.
+* `e` jump forward to the end of a word.
+* `w` jump forward to the beginning of a word.
+* `<n>w` jump forward `n` words.
+* `b` jump backward to the beginning of a word.
+* `<n>b` jump backward `n` words.
+
+* `)` jump forward one sentence.
+* `(` jump backward one sentence.
+
+* `0` jump to beginning of line.
+* `^` jump to beginning of line (first non-blank character).
+* `$` jump to end of line.
+
+* `}` jump forward one paragraph.
+* `{`  jump backward one paragraph.
+
+* `H` jump to the top of the screen.
+* `M` jump to the middle of the screen.
+* `L` jump to the bottom of the screen.
+
+* `''` return to the line where the cursor was before the latest jump.
+* ```` return to the cursor position before the latest jump (undo the jump).
+* `%` jump to corresponding item, e.g. from an open brace to its matching closing brace.
+
+Editing
+-------
 
 To very easily wrap lines to a certain column limit, first `:set
-tw=<width>` (it stands for "textwidth", which is also the long name
+tw=<width>` (`tw` stands for `textwidth`, which is also the long name
 for the option), then select the lines you want to wrap (`V` visual
 mode is good for this), then simply type `gq`. Easy!
 
 To copy text, select the text and type `y`, which apparently
 [stands for "yank"](http://vim.wikia.com/wiki/Copy,_cut_and_paste).
+
+* Column info in status bar, `:set ruler`.
+* Column guide, [`:set colorcolumn=<n>`](http://superuser.com/questions/365320/how-to-show-the-current-column-in-the-statusbar-in-vim/365323#365323).
 
 Links
 -----
