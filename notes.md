@@ -38,6 +38,32 @@ According to [Pro Git](http://git-scm.com/book/en/Git-Internals-Git-References):
 >     $ git update-ref refs/heads/master \
 >     > 1a410efbd13591db07496601ebc7a059dd55cfe9
 
+### HEAD: Symbolic References ###
+
+According to [Pro Git](http://git-scm.com/book/en/Git-Internals-Git-References#The-HEAD), blah blah
+
+    $ cat .git/HEAD
+    ref: refs/heads/master
+
+Links:
+
+* https://www.kernel.org/pub/software/scm/git/docs/git-symbolic-ref.html
+* http://stackoverflow.com/questions/4986000/whats-the-recommended-usage-of-a-git-symbolic-reference/5000668#5000668
+* http://stackoverflow.com/questions/17913550/git-moving-the-git-directory-to-another-drive-keep-the-source-code-where-it
+
+> The steps to re-configure an existing checkout are:
+>
+> 1. move the `.git` dir to where it needs to be.
+> 2. replace it with a file `.git` containing: `gitdir: path/to/.git`.
+> 3. define `core.worktree` to point at the working copy.
+>
+> As a script that would be:
+>
+>     $ cd my/project
+>     $ mv .git /tmp/.git
+>     $ echo "gitdir: /tmp/.git" > .git
+>     $ git config core.worktree $PWD
+
 Vim
 ===
 
