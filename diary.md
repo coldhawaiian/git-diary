@@ -88,3 +88,50 @@ what I found:
 * [What's the Git approach to publish a patch queue?](http://stackoverflow.com/questions/5016862/whats-the-git-approach-to-publish-a-patch-queue).
 * [git guilt](http://repo.or.cz/w/guilt.git).
 * [TopGit](https://github.com/greenrd/topgit).
+
+2013-08-07, Wednesday
+=====================
+
+9:44 pm
+-------
+
+Dear diary, **last Monday**, while browsing questions on Stack
+Overflow I found out that Linus Torvalds hates C++:
+
+* [Why is the linux kernel not implemented in C++?](http://stackoverflow.com/questions/520068/why-is-the-linux-kernel-not-implemented-in-c/520355#520355)
+* [Linus Torvalds on C++](http://harmful.cat-v.org/software/c++/linus)
+
+I also learned that although the DVCS
+[Monotone was an influence in the creation of Git](http://en.wikipedia.org/wiki/Monotone_(software)#Monotone_as_Git_inspiration),
+Linus also came to hate it too...apparently because, in part, it was
+written in C++:
+
+> If you want a VCS that is written in C++, go play with Monotone.
+> Really. They use a "real database". They use "nice object-oriented
+> libraries". They use "nice C++ abstractions". And quite frankly, as
+> a result of all these design decisions that sound so appealing to
+> some CS people, the end result is a horrible and unmaintainable
+> mess.
+
+I also discovered another DVCS,
+[GNU Bazaar](http://en.wikipedia.org/wiki/Bazaar_(software)).
+
+**Yesterday** I learned that the
+[source code for Vim](http://vim.sourceforge.net/mercurial.php) is now
+[versioned in Mercurial on Google Code](https://code.google.com/p/vim/).
+
+**Today**, while browsing more Stack Overflow questions,
+[I found one where the original poster was having difficulty getting the `--patience` flag of `git diff` to work](http://stackoverflow.com/questions/18116221/accurate-git-commits).
+
+I've also experienced that problem, so I decided to look up more
+information about the patience diff algorithm. I found
+[a blog post that has an example where it works beautifully](http://alfedenzo.livejournal.com/170301.html),
+which I've included an example of in the previous two commits of this
+repo for easy reference.
+
+Here are some of the other resources I found:
+
+* [What is `git diff --patience` for?](http://stackoverflow.com/questions/4045017/what-is-git-diff-patience-for/4045087#4045087)
+* [Bram Cohen speaks up about patience diff](http://git.661346.n2.nabble.com/Bram-Cohen-speaks-up-about-patience-diff-td2277041.html)
+* [Patience Diff](http://bryanpendleton.blogspot.com/2010/05/patience-diff.html)
+* [Patience Diff Advantages](http://bramcohen.livejournal.com/73318.html)
