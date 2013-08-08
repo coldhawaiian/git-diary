@@ -74,8 +74,8 @@ I gave it an MIT License, which I found some more resources for at the
 I also found this Stack Overflow answer about
 [using anchors with Markdown](http://stackoverflow.com/questions/6695439/how-do-you-create-link-to-a-named-anchor-in-multimarkdown/7015050#7015050).
 
-3:05
-----
+3:05 pm
+-------
 
 I was looking through some of the most recent Git questions on Stack
 Overflow, and I [knittl's answer](http://stackoverflow.com/questions/18044819/how-to-remove-commits-from-rebased-branch-and-rebase-again/18044973#18044973)
