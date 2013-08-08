@@ -1,9 +1,23 @@
 /*
- * This example comes from [Patience Diff, a brief summary][1].
+ * This example comes from [Patience Diff, a brief summary][1]. To
+ * demonstrate, diff this file with its previous revision:
+ *
+ *     $ git log --oneline -- patience-example.c
+ *     $ git diff <previous> patience-example.c
+ *     $ git diff --patience <previous> patience-example.c
  *
  * [1]: http://alfedenzo.livejournal.com/170301.html
  */
 #include <stdio.h>
+
+int fib(int n)
+{
+    if (n > 2)
+    {
+        return fib(n-1) + fib(n-2);
+    }
+    return 1;
+}
 
 // Frobs foo heartily
 int frobnitz(int foo)
@@ -11,21 +25,11 @@ int frobnitz(int foo)
     int i;
     for (i = 0; i < 10; i++)
     {
-        printf("Your answer is: ");
         printf("%d\n", foo);
     }
 }
 
-int fact(int n)
-{
-    if (n > 1)
-    {
-        return fact(n-1) * n;
-    }
-    return 1;
-}
-
 int main(int argc, char **argv)
 {
-    frobnitz(fact(10));
+    frobnitz(fib(10));
 }
