@@ -64,6 +64,28 @@ Links:
 >     $ echo "gitdir: /tmp/.git" > .git
 >     $ git config core.worktree $PWD
 
+Regular Expressions
+===================
+
+Debuggers
+---------
+
+* [Debuggex](https://www.debuggex.com/), excellent visualization, for JavaScript, Python, and PCRE.
+* [RegexHero.Net](http://regexhero.net/tester/), for .NET.
+* [RegexPal](http://regexpal.com/), for JavaScript.
+* [Rubular](http://rubular.com/), for Ruby.
+
+Greediness
+----------
+
+By default, regular expressions are *greedy*, meaning that they will capture many groups of matches as possible, instead of just stopping at the minimum necessary characters for a match.  This behavior can be modified with the **lazy quantifier**, `?`.
+
+Parsing HTML
+------------
+
+* [RegEx match open tags except XHTML self-contained tags](http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags)
+* [Can you provide some examples of why it is hard to parse XML and HTML with a regex?](http://stackoverflow.com/questions/701166/can-you-provide-some-examples-of-why-it-is-hard-to-parse-xml-and-html-with-a-reg)
+
 Vim
 ===
 
