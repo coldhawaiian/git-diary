@@ -86,6 +86,11 @@ Parsing HTML
 * [RegEx match open tags except XHTML self-contained tags](http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags)
 * [Can you provide some examples of why it is hard to parse XML and HTML with a regex?](http://stackoverflow.com/questions/701166/can-you-provide-some-examples-of-why-it-is-hard-to-parse-xml-and-html-with-a-reg)
 
+OS X
+====
+
+* Paging in `less`: use <kbd>space</kbd> to page down and <kbd>b</kbd> to page up.  Weird. [Source](http://programming4life.wordpress.com/2009/02/19/mac-os-x-less-up-down/)
+
 Unix Tools
 ==========
 
