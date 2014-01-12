@@ -147,6 +147,18 @@ To copy text, select the text and type `y`, which apparently
 * Column info in status bar, `:set ruler`.
 * Column guide, [`:set colorcolumn=<n>`](http://superuser.com/questions/365320/how-to-show-the-current-column-in-the-statusbar-in-vim/365323#365323).
 
+Quitting VimDiff
+---------------------
+
+Use one of the following:
+
+1. `:qall`
+2. `:qa`
+
+Aside: use `:wqall` to write all open windows.
+
+[Source](http://vim.1045645.n5.nabble.com/Exiting-vimdiff-td1143234.html).
+
 Links
 -----
 
