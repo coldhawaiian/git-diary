@@ -95,6 +95,7 @@ Sublime Text 3
 ==============
 
 * [Run from the command line (OS X)](http://www.sublimetext.com/docs/3/osx_command_line.html).
+  * Also see http://stackoverflow.com/a/20155149/456814.
 
 Unix Tools
 ==========
