@@ -86,6 +86,12 @@ Parsing HTML
 * [RegEx match open tags except XHTML self-contained tags](http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags)
 * [Can you provide some examples of why it is hard to parse XML and HTML with a regex?](http://stackoverflow.com/questions/701166/can-you-provide-some-examples-of-why-it-is-hard-to-parse-xml-and-html-with-a-reg)
 
+Unix Tools
+==========
+
+* `du`: Disk Usage.
+* `tree`: Unix only, but available for OS X as a Homebrew package.
+
 Vim
 ===
 
