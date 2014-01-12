@@ -91,6 +91,11 @@ OS X
 
 * Paging in `less`: use <kbd>space</kbd> to page down and <kbd>b</kbd> to page up.  Weird. [Source](http://programming4life.wordpress.com/2009/02/19/mac-os-x-less-up-down/)
 
+Sublime Text 3
+==============
+
+* [Run from the command line (OS X)](http://www.sublimetext.com/docs/3/osx_command_line.html).
+
 Unix Tools
 ==========
 
