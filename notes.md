@@ -155,6 +155,11 @@ To copy text, select the text and type `y`, which apparently
 * Column info in status bar, `:set ruler`.
 * Column guide, [`:set colorcolumn=<n>`](http://superuser.com/questions/365320/how-to-show-the-current-column-in-the-statusbar-in-vim/365323#365323).
 
+Tabbing
+-------
+
+* Use `:%retab` to retab a whole file based on your current tab settings ([source](http://stackoverflow.com/a/9105889/456814)).
+
 Quitting VimDiff
 ---------------------
 
