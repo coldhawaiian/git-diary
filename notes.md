@@ -120,6 +120,8 @@ Configuration
 * `<n>w` jump forward `n` words.
 * `b` jump backward to the beginning of a word.
 * `<n>b` jump backward `n` words.
+* CTRL-F to page forward.
+* CTRL-B to page backward.
 
 * `)` jump forward one sentence.
 * `(` jump backward one sentence.
