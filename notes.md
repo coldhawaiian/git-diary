@@ -158,7 +158,7 @@ To copy text, select the text and type `y`, which apparently
 Tabbing
 -------
 
-* Use `:%retab` to retab a whole file based on your current tab settings ([source](http://stackoverflow.com/a/9105889/456814)).
+* Use `:%retab!` to retab a whole file based on your current tab settings ([source](http://stackoverflow.com/a/9105889/456814)).
 
 Quitting VimDiff
 ---------------------
