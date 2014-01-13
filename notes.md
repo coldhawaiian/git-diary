@@ -106,6 +106,12 @@ Unix Tools
 Vim
 ===
 
+Configuration
+-------------
+
+* To un-set values, prefix them with "no", e.g. `:set noexpandtab`.
+  * [Source](http://wills-tech-notes.blogspot.com/2008/09/vim-unset-command.html).
+
 [Moving Around](http://vim.wikia.com/wiki/Moving_around)
 --------------------------------------------------------
 
