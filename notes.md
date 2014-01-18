@@ -90,6 +90,11 @@ OS X
 ====
 
 * Paging in `less`: use <kbd>space</kbd> to page down and <kbd>b</kbd> to page up.  Weird. [Source](http://programming4life.wordpress.com/2009/02/19/mac-os-x-less-up-down/)
+* `open .` to open current working directory in Finder ([source](http://apple.stackexchange.com/questions/5435/got-any-tips-or-tricks-for-terminal-in-mac-os-x)).
+* Hold option and click a position in the current line to move your cursor to that position ([source](http://apple.stackexchange.com/a/5502/30766)).
+* Start a quick webserver from any directory: `python -m SimpleHTTPServer 8000` ([source](http://apple.stackexchange.com/a/5480/30766)).
+* When you're editing a particularly long and gnarly command line: 
+ctrl+X, ctrl+E will pop you into your editor and let you work on it there ([source](http://apple.stackexchange.com/a/5471/30766)).
 
 Sublime Text 3
 ==============
