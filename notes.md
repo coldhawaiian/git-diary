@@ -96,6 +96,11 @@ OS X
 * When you're editing a particularly long and gnarly command line: 
 ctrl+X, ctrl+E will pop you into your editor and let you work on it there ([source](http://apple.stackexchange.com/a/5471/30766)).
 
+Switching Terminal Tabs
+-----------------------
+
+> You can move left and right through tabs with CMD + SHIFT + ] for right and CMD + SHIFT + [ for left. &mdash; [source](http://apple.stackexchange.com/a/81621/30766).
+
 Sublime Text 3
 ==============
 
