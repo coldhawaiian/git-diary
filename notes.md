@@ -3,6 +3,26 @@ Description
 
 A place to keep various notes.
 
+JavaScript
+==========
+
+[Using `toString()` to detect object class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString#Using_toString_to_detect_object_type)
+---------------
+
+> `toString()` can be used with every object and allows you to get its class. To use the `Object.prototype.toString()` with every object, you need to call `Function.prototype.call()` or `Function.prototype.apply()` on it, passing the object you want to inspect as the first parameter called `thisArg`.
+>
+> ```javascript
+> var toString = Object.prototype.toString;
+> toString.call(new Date); // [object Date]
+> toString.call(new String); // [object String]
+> toString.call(Math); // [object Math]
+> 
+> // Since JavaScript 1.8.5
+> toString.call(undefined); // [object Undefined]
+> toString.call(null); // [object Null]
+> ```
+>
+
 Git
 ===
 
