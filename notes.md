@@ -121,6 +121,11 @@ Switching Terminal Tabs
 
 > You can move left and right through tabs with CMD + SHIFT + ] for right and CMD + SHIFT + [ for left. &mdash; [source](http://apple.stackexchange.com/a/81621/30766).
 
+Style Guides
+============
+
+* [GitHub Style Guide](https://github.com/styleguide).
+
 Sublime Text 3
 ==============
 
