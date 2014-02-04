@@ -36,3 +36,7 @@ Note to self&mdash;here are some licenses to check out:
 
 [pro-git]: http://git-scm.com/book
 [git-refs]: http://git-scm.com/book/en/Git-Internals-Git-References
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/coldhawaiian/git-diary/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
