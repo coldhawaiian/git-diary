@@ -3,6 +3,15 @@ Description
 
 A place to keep various notes.
 
+CSS
+===
+
+px vs em vs %
+-------------
+
+* [CSS FONT-SIZE: EM VS. PX VS. PT VS. PERCENT](http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/)
+  * Great, clear article.
+
 HTML Spec
 =========
 
