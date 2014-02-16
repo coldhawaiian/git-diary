@@ -3,6 +3,12 @@ Description
 
 A place to keep various notes.
 
+HTML Spec
+=========
+
+* [HTML: The Living Standard &ndash; A technical specification for Web developers](http://developers.whatwg.org/)
+  * A super-easy-to-read version of the spec, which is worth its weight in gold! 
+
 JavaScript
 ==========
 
