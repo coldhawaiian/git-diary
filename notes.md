@@ -21,6 +21,41 @@ HTML Spec
 JavaScript
 ==========
 
+[Converting Array-Like Objects to Arrays][converting-array-like-arrays]
+-----------------------------------------------------------------------
+
+> The `slice` method can also be called to convert Array-like objects /
+> collections to a new `Array`. You just bind the method to the object. The
+> `arguments` inside a function is an example of an "array-like object".
+> 
+> ```javascript
+> function list() {
+>   return Array.prototype.slice.call(arguments, 0);
+> }
+> 
+> var x = list(1, 2, 3); // [1, 2, 3]
+> ```
+> 
+> Binding can be done with the `.call` function of `Function.prototype` and it
+> can also be reduced using `[].slice.call(arguments)` instead of
+> `Array.prototype.slice.call`.
+>
+> Anyway, it can be simplified using `bind`.
+> 
+> ```javascript
+> var unboundSlice = Array.prototype.slice;
+> var slice = Function.prototype.call.bind(unboundSlice);
+> 
+> function list() {
+>   return slice(arguments, 0);
+> }
+> 
+> var x = list(1, 2, 3); // [1, 2, 3]
+> ```
+
+[converting-array-like-arrays]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#Array-like
+
+
 [Using `toString()` to detect object class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString#Using_toString_to_detect_object_type)
 ---------------
 
