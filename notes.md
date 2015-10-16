@@ -3,6 +3,96 @@ Description
 
 A place to keep various notes.
 
+C#
+==
+
+[SqlBulkCopy](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlbulkcopy(v=vs.110).aspx)
+-----------
+
+```csharp
+using System.Data.SqlClient;
+
+class Program
+{
+    static void Main()
+    {
+        string connectionString = GetConnectionString();
+        // Open a sourceConnection to the AdventureWorks database.
+        using (var sourceConnection = new SqlConnection(connectionString))
+        {
+            sourceConnection.Open();
+
+            // Perform an initial count on the destination table.
+            var commandRowCount = new SqlCommand(
+                "SELECT COUNT(*) FROM dbo.BulkCopyDemoMatchingColumns;",
+                sourceConnection
+            );
+            long countStart = System.Convert.ToInt32(commandRowCount.ExecuteScalar());
+            Console.WriteLine("Starting row count = {0}", countStart);
+
+            // Get data from the source table as a SqlDataReader.
+            var commandSourceData = new SqlCommand(
+                "SELECT ProductID, Name, ProductNumber FROM Production.Product;",
+                sourceConnection
+            );
+            SqlDataReader reader = commandSourceData.ExecuteReader();
+
+            // Open the destination connection. In the real world you would
+            // not use SqlBulkCopy to move data from one table to the other
+            // in the same database. This is for demonstration purposes only.
+            using (var destinationConnection = new SqlConnection(connectionString))
+            {
+                destinationConnection.Open();
+
+                // Set up the bulk copy object.
+                // Note that the column positions in the source
+                // data reader match the column positions in
+                // the destination table so there is no need to
+                // map columns.
+                using (var bulkCopy = new SqlBulkCopy(destinationConnection))
+                {
+                    bulkCopy.DestinationTableName = "dbo.BulkCopyDemoMatchingColumns";
+
+                    try
+                    {
+                        // Write from the source to the destination.
+                        bulkCopy.WriteToServer(reader);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                    finally
+                    {
+                        // Close the SqlDataReader. The SqlBulkCopy
+                        // object is automatically closed at the end
+                        // of the using block.
+                        reader.Close();
+                    }
+                }
+
+                // Perform a final count on the destination
+                // table to see how many rows were added.
+                long countEnd = System.Convert.ToInt32(commandRowCount.ExecuteScalar());
+                Console.WriteLine("Ending row count = {0}", countEnd);
+                Console.WriteLine("{0} rows were added.", countEnd - countStart);
+                Console.WriteLine("Press Enter to finish.");
+                Console.ReadLine();
+            }
+        }
+    }
+
+    // To avoid storing the sourceConnection string in your code,
+    // you can retrieve it from a configuration file.
+    private static string GetConnectionString()
+    {
+        return "Data Source=(local); " +
+            " Integrated Security=true;" +
+            "Initial Catalog=AdventureWorks;";
+    }
+}
+```
+
 CSS
 ===
 
