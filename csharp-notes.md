@@ -113,3 +113,11 @@ class Program
     }
 }
 ```
+
+[Environment.SpecialFolder Enumeration](https://msdn.microsoft.com/en-us/library/system.environment.specialfolder(v=vs.110).aspx)
+======================================
+
+```csharp
+Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)
+// "C:\Users\<user>
+```
