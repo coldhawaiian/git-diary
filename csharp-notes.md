@@ -121,3 +121,10 @@ class Program
 Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)
 // "C:\Users\<user>
 ```
+
+Percent Format Strings
+======================
+0.123.ToString("P")  // "12.30 %"
+0.123.ToString("P0") // "12 %" 
+0.123.ToString("P1") // "12.3 %"
+0.123.ToString("P2") // "12.30 %"
